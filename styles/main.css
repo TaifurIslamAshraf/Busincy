@@ -1,0 +1,80 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Titillium+Web:wght@300;400;600;700&display=swap");
+
+/* other css file import */
+@import url("sections/about.css");
+@import url("sections/blog.css");
+@import url("sections/contact.css");
+@import url("sections/index.css");
+@import url("sections/pricing.css");
+@import url("sections/projects.css");
+@import url("sections/services.css");
+@import url("sections/team.css");
+
+/* css variable */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #1c4245;
+
+  --text-primary: #000000;
+  --text-primary-forgraund: #cccccc;
+  --text-secondary: #888888;
+  --button-color: #ed854a;
+
+  --border: linear-gradient(
+    90.07deg,
+    rgba(28, 66, 69, 0.7) -3.8%,
+    rgba(28, 66, 69, 0) 102.82%
+  );
+
+  --font-heading: "Titillium Web", sans-serif;
+  --font-text: "Syne", sans-serif;
+}
+
+/* css reset styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* default styles */
+
+body {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  line-height: 50px;
+}
+.subTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: var(--font-text);
+}
