@@ -45,8 +45,9 @@
 /* default styles */
 
 body {
-  max-width: 1380px;
+  max-width: 1440px;
   margin: 0 auto;
+  font-family: var(--font-text);
 }
 
 a {
