@@ -22,10 +22,11 @@
   --button-color: #ed854a;
 
   --border: linear-gradient(
-    90.07deg,
-    rgba(28, 66, 69, 0.7) -3.8%,
-    rgba(28, 66, 69, 0) 102.82%
-  );
+      90.07deg,
+      rgba(28, 66, 69, 0.7) -3.8%,
+      rgba(28, 66, 69, 0) 102.82%
+    )
+    1;
 
   --font-heading: "Titillium Web", sans-serif;
   --font-text: "Syne", sans-serif;
@@ -48,6 +49,11 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: var(--font-text);
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 3rem;
 }
 
 a {
@@ -78,4 +84,16 @@ a {
   font-weight: 500;
   line-height: 22px;
   font-family: var(--font-text);
+}
+
+@media screen and (max-width: 1165px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .container {
+    padding: 1rem;
+  }
 }

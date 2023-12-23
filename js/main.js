@@ -3,10 +3,12 @@ import "aos/dist/aos.css";
 
 //Init Aos Animations
 Aos.init({
-    duration: 1000,
+    duration: 700,
     offset: 100
 })
 
+//init licid icon
+lucide.createIcons();
 
 //header active mobile
 const headerMobile = document.getElementById("mobile_menu")

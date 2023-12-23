@@ -17,7 +17,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="">
       <!-- navbar -->
       <nav class="flex-between">
         <div class="flex-between">
@@ -31,7 +31,7 @@
 
         <ul class="flex-center home-nav">
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
+          <li><a href="./pages/about.html">About Us</a></li>
           <li><a href="/">Service</a></li>
           <li><a href="/">Page</a></li>
           <li><a href="/">Blog</a></li>
@@ -70,7 +70,7 @@
       </div>
 
       <!-- home meta -->
-      <div class="home_meta">
+      <div class="home_meta" data-aos="fade-down">
         <img class="home_meta-img1" src="./assets/home_meta1.png" alt="" />
         <div class="home_meta-middel">
           <div class="home_meta-client">
@@ -97,7 +97,276 @@
           </div>
         </div>
       </div>
+
+      <!-- partnar logo -->
+      <div class="partner_content">
+        <marquee class="partner_content_slide">
+          <div class="slide-logo">
+            <div class="">
+              <img src="./assets/google.svg" alt="google" />
+            </div>
+            <div class="">
+              <img src="./assets/airbnb.png" alt="" />
+            </div>
+            <div class="">
+              <img src="./assets/stripe.png" alt="" />
+            </div>
+            <div class="">
+              <img src="./assets/uber.png" alt="" />
+            </div>
+            <div class="">
+              <img src="./assets/amazon.png" alt="" />
+            </div>
+          </div>
+        </marquee>
+      </div>
+
+      <!-- services section -->
+
+      <div class="container service_content">
+        <p class="service_content-subtitle">OUR SERVICES</p>
+        <div class="service_content-heading">
+          <h1 class="title" data-aos="fade-down">
+            Digital agency work to interact <br />
+            and our services can help you.
+          </h1>
+          <p data-aos="fade-down">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud.
+          </p>
+        </div>
+
+        <div class="service_content-cards">
+          <div class="service_card" data-aos="fade-right">
+            <img
+              src="./assets/web_development_icon.png"
+              alt="web_development"
+            />
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="service_card-button">
+              <h3>Explore More</h3>
+              <i data-lucide="arrow-up-right"></i>
+            </div>
+          </div>
+
+          <div class="service_card" data-aos="fade-left">
+            <img src="./assets/ui_ux_icon.png" alt="web_development" />
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="service_card-button">
+              <h3>Explore More</h3>
+              <i data-lucide="arrow-up-right"></i>
+            </div>
+          </div>
+
+          <div class="service_card" data-aos="fade-right">
+            <img src="./assets/digital_marketing_icon.png" alt="ui ux" />
+            <h2>Digital Marketing</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="service_card-button">
+              <h3>Explore More</h3>
+              <i data-lucide="arrow-up-right"></i>
+            </div>
+          </div>
+
+          <div class="service_card" data-aos="fade-left">
+            <img src="./assets/graphic_design_icon.png" alt="web_development" />
+            <h2>Graphic Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="service_card-button">
+              <h3>Explore More</h3>
+              <i data-lucide="arrow-up-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- home about section -->
+      <div class="container home_about">
+        <p class="home_about-subtitle">About us</p>
+        <div class="home_about-content">
+          <div class="home_about-text" data-aos="fade-down">
+            <h1 class="title">
+              We are here to make your <br />
+              product look more elegant <br />
+              and stylish.
+            </h1>
+
+            <div class="home_about-subTitle">
+              <p class="subTitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim.
+              </p>
+              <button class="home_about_content-button">
+                Read More
+                <i data-lucide="arrow-up-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="home_about-img" data-aos="fade-down">
+            <img src="./assets/home_about__img.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- home projects sections -->
+      <section class="container home_projects">
+        <p class="home_projects-subtitle">OUR PROJECT</p>
+
+        <div class="home_projects-content">
+          <h1 class="title">
+            Let’s see a section <br />
+            of latest our project.
+          </h1>
+          <div class="home_projects-content_subtext">
+            <p class="subTitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="home_projects-link">
+              <a href="#"> See All Project </a>
+              <i data-lucide="arrow-up-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="home_projects-cards">
+          <div class="home_projects-card" data-aos="zoom-in">
+            <img
+              class="home_projects_card-img"
+              src="./assets/projects_image1.png"
+              alt="home-projects-image"
+            />
+            <div class="home_projects-card_content">
+              <div class="home_projects-card_content-text">
+                <h3>Architect Drawing</h3>
+                <p>UI/UX Design | 15 Aug 2023</p>
+              </div>
+              <div class="home_projects-card_content-btn">
+                <button>See Project</button>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_projects-card" data-aos="zoom-in">
+            <img
+              class="home_projects_card-img"
+              src="./assets/projects_image2.png"
+              alt="home-projects-image"
+            />
+            <div class="home_projects-card_content">
+              <div class="home_projects-card_content-text">
+                <h3>Businessman Writing</h3>
+                <p>Seo Planing | 15 Aug 2022</p>
+              </div>
+              <div class="home_projects-card_content-btn">
+                <button>See Project</button>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_projects-card" data-aos="zoom-in">
+            <img
+              class="home_projects_card-img"
+              src="./assets/projects_image3.png"
+              alt="home-projects-image"
+            />
+            <div class="home_projects-card_content">
+              <div class="home_projects-card_content-text">
+                <h3>Engineer Meeting</h3>
+                <p>Drawing Planing | 15 Aug 2022</p>
+              </div>
+              <div class="home_projects-card_content-btn">
+                <button>See Project</button>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_projects-card" data-aos="zoom-in">
+            <img
+              class="home_projects_card-img"
+              src="./assets/projects_image4.png"
+              alt="home-projects-image"
+            />
+            <div class="home_projects-card_content">
+              <div class="home_projects-card_content-text">
+                <h3>Calculating Finances</h3>
+                <p>Finances | 15 Aug 2022</p>
+              </div>
+              <div class="home_projects-card_content-btn">
+                <button>See Project</button>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_projects-card" data-aos="zoom-in">
+            <img
+              class="home_projects_card-img"
+              src="./assets/projects_image5.png"
+              alt="home-projects-image"
+            />
+            <div class="home_projects-card_content">
+              <div class="home_projects-card_content-text">
+                <h3>Businessman Exam</h3>
+                <p>Planing | 15 Aug 2022</p>
+              </div>
+              <div class="home_projects-card_content-btn">
+                <button>See Project</button>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_projects-card" data-aos="zoom-in">
+            <img
+              class="home_projects_card-img"
+              src="./assets/projects_image6.png"
+              alt="home-projects-image"
+            />
+            <div class="home_projects-card_content">
+              <div class="home_projects-card_content-text">
+                <h3>Giving Presentation</h3>
+                <p>Planing | 15 Aug 2022</p>
+              </div>
+              <div class="home_projects-card_content-btn">
+                <button>See Project</button>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script type="module" src="./js/main.js"></script>
+
+    <!-- licide icon -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </body>
 </html>
