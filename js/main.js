@@ -10,6 +10,57 @@ Aos.init({
 //init licid icon
 lucide.createIcons();
 
+//home team swiper Swiper
+  const teamSwiper = new Swiper(".home_team-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    loop: true,
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+    
+  
+  });
+  //handling custop swiper button
+  document.querySelector(".custom-swiper-button-prev").addEventListener("click", function(){
+    teamSwiper.slideNext()
+  })
+  document.querySelector(".custom-swiper-button-next").addEventListener("click", function(){
+    teamSwiper.slidePrev()
+  })
+
+//   testimonials swiper
+const testimonialSwiper = new Swiper(".testimonialSwiper", {
+    //    navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+})
+const testimonialSwiperNextBtn = document.querySelector(".testimonials-swiper-button-next");
+const testimonialSwiperPrevBtn = document.querySelector(".testimonials-swiper-button-prev");
+
+testimonialSwiperNextBtn.addEventListener("click", function(){
+    testimonialSwiper.slideNext()
+})
+testimonialSwiperPrevBtn.addEventListener("click", function(){
+    testimonialSwiper.slidePrev()
+})
+
 //header active mobile
 const headerMobile = document.getElementById("mobile_menu")
 const homeNav = document.querySelector(".home-nav")

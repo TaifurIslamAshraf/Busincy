@@ -60,6 +60,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .flex-center {
   display: flex;
@@ -75,7 +80,7 @@ a {
 
 .title {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font-heading);
   line-height: 50px;
 }
