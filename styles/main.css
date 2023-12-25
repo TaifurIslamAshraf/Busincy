@@ -50,6 +50,10 @@ body {
   margin: 0 auto;
   font-family: var(--font-text);
   overflow-x: hidden;
+  overflow-wrap: unset;
+}
+#app {
+  overflow-x: hidden;
 }
 
 .container {
@@ -94,11 +98,21 @@ button {
 @media screen and (max-width: 1165px) {
   .container {
     padding: 2rem;
+    overflow-x: hidden !important;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  #app {
+    overflow-x: hidden !important;
   }
 }
 
 @media screen and (max-width: 775px) {
   .container {
     padding: 1rem;
+  }
+  #app {
+    overflow-x: hidden !important;
   }
 }
