@@ -677,6 +677,7 @@ nav ul li a:hover {
   top: -20%;
   left: 0;
   right: 0;
+  z-index: 90;
 }
 .start_project-btn {
   display: flex;
@@ -820,10 +821,13 @@ nav ul li a:hover {
   background-color: var(--button-color);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0.8rem 0.5rem;
   width: 100%;
   flex: 1;
+}
+.footer_contents-subscribe .mail_box-btn .mail_send_icon {
+  width: 16px;
 }
 .footer_copyright {
   margin-top: 3rem;
@@ -974,13 +978,16 @@ nav ul li a:hover {
 
   /* start project  */
   .start_project {
-    padding: 2rem 1rem;
-    top: -10%;
+    position: static;
   }
 
   /* footer responsive */
   .footer_contents {
     grid-template-columns: 1fr;
+  }
+  /* footer sections */
+  .footer_contents {
+    margin-top: 5rem;
   }
 }
 
@@ -1093,6 +1100,6 @@ nav ul li a:hover {
 
   /* footer sections */
   .footer_contents {
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
 }
