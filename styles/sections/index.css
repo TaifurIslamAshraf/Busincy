@@ -1,4 +1,13 @@
 /* nav styles */
+.my_nav div,
+.my_nav ul {
+  background-color: #fff !important;
+  color: var(--text-primary);
+}
+.my_nav ul li a:hover {
+  color: var(--button-color);
+}
+
 nav div {
   display: flex;
   align-items: center;
@@ -857,6 +866,11 @@ nav ul li a:hover {
   }
   .fa-bars.active-fa-bars {
     background-color: rgba(207, 64, 64, 0.247);
+  }
+
+  .my_nav div,
+  .my_nav ul {
+    background-color: var(--button-color) !important;
   }
 
   nav div {

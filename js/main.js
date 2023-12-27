@@ -1,6 +1,8 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
+
 //Init Aos Animations
 Aos.init({
     duration: 700,
@@ -10,7 +12,13 @@ Aos.init({
 //init licid icon
 lucide.createIcons();
 
+//pathname
+export const pathName = ()=>{
+ return window.location.pathname
+}
+
 //home team swiper Swiper
+export const teamSwiperSlider = ()=>{
   const teamSwiper = new Swiper(".home_team-swiper", {
     slidesPerView: 3,
     spaceBetween: 40,
@@ -44,8 +52,11 @@ lucide.createIcons();
     teamSwiper.slidePrev()
   })
 
+}  
+
 //   testimonials swiper
-const testimonialSwiper = new Swiper(".testimonialSwiper", {
+export const testimonialsSwiperSlider = ()=>{
+  const testimonialSwiper = new Swiper(".testimonialSwiper", {
     //    navigation: {
     //     nextEl: ".swiper-button-next",
     //     prevEl: ".swiper-button-prev",
@@ -60,12 +71,26 @@ testimonialSwiperNextBtn.addEventListener("click", function(){
 testimonialSwiperPrevBtn.addEventListener("click", function(){
     testimonialSwiper.slidePrev()
 })
+}
 
-//header active mobile
+export const homeHeaderMobileActive = ()=>{
+  //header active mobile
 const headerMobile = document.getElementById("mobile_menu")
 const homeNav = document.querySelector(".home-nav")
 
 headerMobile.addEventListener("click", function(){
     homeNav.classList.toggle("active-mobile")
     headerMobile.classList.toggle("active-fa-bars")
+
+    if(pathName() !== "/"){
+      homeNav.classList.add("my_nav")
+    }
+
 })
+}
+
+
+//functions call
+homeHeaderMobileActive()
+teamSwiperSlider()
+testimonialsSwiperSlider()
