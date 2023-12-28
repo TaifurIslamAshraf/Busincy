@@ -83,6 +83,7 @@ nav ul li a:hover {
   top: 75%;
   left: 78%;
   width: 100px;
+  animation: playAnim 10s linear infinite;
 }
 
 /* home meta */
@@ -97,7 +98,7 @@ nav ul li a:hover {
   left: 0;
   right: 90px;
 
-  background-color: var(--bg-secondary);
+  background-color: #274b4e;
 
   max-width: 1040px;
   height: 480px;
@@ -201,8 +202,10 @@ nav ul li a:hover {
   border-image: var(--border);
 }
 .service_card img {
-  background-color: #1c424571;
+  background-color: #1c42453d;
   padding: 5px;
+  width: 40px;
+  height: 40px;
 }
 .service_card h2 {
   font-size: 22px;
@@ -276,6 +279,12 @@ nav ul li a:hover {
   border: none;
   gap: 10px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.home_about_content-button:hover {
+  background-color: var(--text-primary-forgraund);
+  color: #274b4e;
+  transform: scale(1.1);
 }
 
 /* home projects sections */
@@ -358,6 +367,11 @@ nav ul li a:hover {
   color: #fff;
   padding: 5px 10px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.home_projects-card_content-btn:hover {
+  background-color: var(--text-secondary);
+  transform: scale(1.1);
 }
 .home_projects-card_content-btn button {
   border: none;
@@ -567,9 +581,11 @@ nav ul li a:hover {
   padding: 0.3rem;
 
   cursor: pointer;
+  transition: all 0.3s;
 }
 .home_testimonials_slider-btns div:hover {
-  background-color: #153335;
+  background-color: var(--text-primary-forgraund);
+  color: var(--text-primary);
 }
 
 /* price table sections styles */
@@ -606,6 +622,8 @@ nav ul li a:hover {
       rgba(28, 66, 69, 0) 102.82%
     )
     1;
+
+  transition: all 0.3s ease-in-out !important;
 }
 .price_table-card:hover {
   background-color: var(--bg-secondary);
@@ -667,6 +685,12 @@ nav ul li a:hover {
   width: 140px;
   height: 40px;
   margin: auto;
+  transition: all 0.3s;
+}
+.price_table-card-btn:hover {
+  background-color: var(--text-primary-forgraund);
+  color: var(--text-primary);
+  transform: translateY(-5px);
 }
 
 /* start projects sections */
@@ -702,11 +726,21 @@ nav ul li a:hover {
   padding: 0.5rem;
 
   cursor: pointer;
+  transition: all 0.3s;
 }
 .start_project-btn button {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+}
+.start_project-btn:hover {
+  background-color: var(--text-primary-forgraund);
+  color: var(--text-primary);
+  transform: translateY(-5px);
+}
+.start_project-btn:hover button {
+  background-color: var(--text-primary-forgraund);
+  color: var(--text-primary);
 }
 
 /* footer sections styles */
@@ -844,12 +878,12 @@ nav ul li a:hover {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-.footer_copyright span {
+/* .footer_copyright span {
   color: var(--button-color);
   font-size: 16px;
   font-weight: 600;
   margin-left: 5px;
-}
+} */
 
 /* home page responsive start */
 

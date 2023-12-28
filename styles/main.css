@@ -94,6 +94,12 @@ button {
   line-height: 22px;
   font-family: var(--font-text);
 }
+.subTitle_btn {
+  color: var(--button-color);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+}
 
 @media screen and (max-width: 1165px) {
   .container {
@@ -114,5 +120,15 @@ button {
   }
   #app {
     overflow-x: hidden !important;
+  }
+}
+
+/* animations */
+@keyframes playAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

@@ -1,0 +1,23 @@
+/* team cards  */
+.our_team-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+/* team section responsive */
+@media screen and (max-width: 992px) {
+  /* team cards  */
+  .our_team-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* team cards  */
+  .our_team-cards {
+    grid-template-columns: auto;
+  }
+}

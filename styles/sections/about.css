@@ -99,6 +99,11 @@
   height: 100px;
 }
 
+/* our team about sections */
+.about_team {
+  margin-bottom: 10rem;
+}
+
 /* responsive styles */
 @media screen and (max-width: 1165px) {
   .about_us-middel {
@@ -109,6 +114,9 @@
     flex-direction: column-reverse;
     gap: 2.5rem;
     padding-top: 1rem;
+  }
+  .about_team {
+    margin-bottom: 0rem;
   }
 }
 @media screen and (max-width: 775px) {

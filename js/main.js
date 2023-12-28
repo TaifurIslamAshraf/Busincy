@@ -17,6 +17,48 @@ export const pathName = ()=>{
  return window.location.pathname
 }
 
+
+export const homeHeaderMobileActive = ()=>{
+  //header active mobile
+const headerMobile = document.getElementById("mobile_menu")
+const homeNav = document.querySelector(".home-nav")
+
+headerMobile.addEventListener("click", function(){
+    homeNav.classList.toggle("active-mobile")
+    headerMobile.classList.toggle("active-fa-bars")
+
+    if(pathName() !== "/"){
+      homeNav.classList.add("my_nav")
+    }
+
+})
+}
+
+
+//   testimonials swiper
+export const testimonialsSwiperSlider = ()=>{
+  const testimonialSwiper = new Swiper(".testimonialSwiper", {
+    //    navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+})
+
+
+
+const testimonialSwiperNextBtn = document.querySelector(".testimonials-swiper-button-next");
+const testimonialSwiperPrevBtn = document.querySelector(".testimonials-swiper-button-prev");
+
+testimonialSwiperNextBtn.addEventListener("click", function(){
+    testimonialSwiper.slideNext()
+})
+testimonialSwiperPrevBtn.addEventListener("click", function(){
+    testimonialSwiper.slidePrev()
+})
+
+
+}
+
 //home team swiper Swiper
 export const teamSwiperSlider = ()=>{
   const teamSwiper = new Swiper(".home_team-swiper", {
@@ -52,42 +94,11 @@ export const teamSwiperSlider = ()=>{
     teamSwiper.slidePrev()
   })
 
-}  
-
-//   testimonials swiper
-export const testimonialsSwiperSlider = ()=>{
-  const testimonialSwiper = new Swiper(".testimonialSwiper", {
-    //    navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    //   },
-})
-const testimonialSwiperNextBtn = document.querySelector(".testimonials-swiper-button-next");
-const testimonialSwiperPrevBtn = document.querySelector(".testimonials-swiper-button-prev");
-
-testimonialSwiperNextBtn.addEventListener("click", function(){
-    testimonialSwiper.slideNext()
-})
-testimonialSwiperPrevBtn.addEventListener("click", function(){
-    testimonialSwiper.slidePrev()
-})
 }
 
-export const homeHeaderMobileActive = ()=>{
-  //header active mobile
-const headerMobile = document.getElementById("mobile_menu")
-const homeNav = document.querySelector(".home-nav")
 
-headerMobile.addEventListener("click", function(){
-    homeNav.classList.toggle("active-mobile")
-    headerMobile.classList.toggle("active-fa-bars")
 
-    if(pathName() !== "/"){
-      homeNav.classList.add("my_nav")
-    }
 
-})
-}
 
 
 //functions call

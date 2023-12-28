@@ -1,0 +1,9 @@
+.projects {
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 1165px) {
+  .projects {
+    margin-bottom: 0rem;
+  }
+}
