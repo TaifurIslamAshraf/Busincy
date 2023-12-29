@@ -1,0 +1,124 @@
+.blogs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+
+  margin-bottom: 10rem;
+}
+.blog {
+  max-width: 370px;
+  width: 100%;
+
+  background-color: #fff;
+}
+.blog_img {
+  position: relative;
+  width: 100%;
+}
+.blog_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.blog_img p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.blog_content {
+  border: 2.5px solid transparent;
+  border-top: none;
+  padding: 5px 1rem;
+}
+.blog_content:hover {
+  border: 2.5px solid transparent;
+  border-top: none;
+  border-image: linear-gradient(
+    180deg,
+    #1c4245 71.15%,
+    rgba(28, 66, 69, 0) 102.23%
+  );
+  border-image-slice: 1;
+}
+.blog_content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog_content-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.blog_content_date-icon {
+  width: 20px;
+  color: var(--button-color);
+}
+.blog_content-date > p {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 600;
+}
+.blog_content-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.blog_content_comment-icon {
+  width: 20px;
+  color: var(--button-color);
+}
+.blog_content-comment > p {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 600;
+}
+.blog_content-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  line-height: 25px;
+  margin: 0.5rem 0;
+}
+.blog_content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--bg-secondary);
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 5px 0;
+  transition: all 0.3s;
+}
+.blog_btn-icon {
+  width: 20px;
+  color: var(--bg-secondary);
+}
+.blog_content button:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 992px) {
+  /* team cards  */
+  .blogs {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* team cards  */
+  .blogs {
+    grid-template-columns: auto;
+  }
+}

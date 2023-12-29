@@ -31,6 +31,7 @@ headerMobile.addEventListener("click", function(){
       homeNav.classList.add("my_nav")
     }
 
+    console.log("hi")
 })
 }
 
@@ -101,7 +102,3 @@ export const teamSwiperSlider = ()=>{
 
 
 
-//functions call
-homeHeaderMobileActive()
-teamSwiperSlider()
-testimonialsSwiperSlider()
