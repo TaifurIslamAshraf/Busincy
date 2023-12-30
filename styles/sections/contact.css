@@ -1,0 +1,140 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  box-shadow: 0px 25px 100px -15px rgba(0, 0, 0, 0.07);
+
+  max-width: 1170px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+.contact_info {
+  background-color: var(--bg-secondary);
+  color: #fff;
+  flex: 1;
+  padding: 1rem;
+}
+.contact_info > h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+.contact_info > p {
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+
+  margin: 1rem 0;
+}
+.contact_info-details {
+  display: flex;
+  gap: 2rem;
+
+  margin: 1.5rem 0;
+}
+.contact_info_details-icon {
+  color: #fff;
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  padding: 10px;
+}
+.contact_info_details-content > h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.contact_info_details-content > p {
+  color: #ddd;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.contact_form {
+  flex: 1.5;
+  padding: 1rem;
+}
+.contact_form > h2 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+}
+.contact_form > p {
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+
+  margin: 1rem 0 2rem 0;
+}
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+  gap: 1.5rem;
+}
+.contact_form form .group_inp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact_form form input {
+  border: 1px solid #eee;
+  background: #f4f5f6;
+  outline: none;
+  padding: 0 1rem;
+  width: 100%;
+  height: 50px;
+}
+.contact_form form textarea {
+  padding: 1rem;
+  border: 1px solid #eee;
+  background: #f4f5f6;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+.contact_form form > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  text-align: center;
+  padding: 7px 0;
+  background-color: var(--button-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.contact_map {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .contact_info > h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact {
+    max-width: auto;
+    width: 100%;
+  }
+  .contact_form form .group_inp {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
