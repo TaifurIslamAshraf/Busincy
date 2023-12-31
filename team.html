@@ -31,14 +31,22 @@
         <ul class="flex-center home-nav">
           <li><a href="/">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Service</a></li>
-          <li><a href="/team.html">Team</a></li>
-          <li><a href="/project.html">Projects</a></li>
-          <li><a href="/price.html">Price</a></li>
+          <li><a href="/services.html">Service</a></li>
+          <li class="dropdown_menu">
+            <a class="dropdown_page" href="#"
+              >Pages <i data-lucide="chevron-down"></i
+            ></a>
+            <ul class="dropdown">
+              <li><a href="/team.html">Team</a></li>
+              <li><a href="/project.html">Projects</a></li>
+              <li><a href="/price.html">Price</a></li>
+            </ul>
+          </li>
+
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li>
-            <img src="./assets/serch_icon.png" alt="search icon" />
+            <i data-lucide="search"></i>
           </li>
         </ul>
       </nav>
