@@ -971,10 +971,8 @@ nav ul .dropdown_menu:hover .dropdown {
     display: none;
     padding: 0 10px;
     width: 100px;
-    background-color: #000;
+    background-color: transparent;
     position: initial;
-    top: 1.5rem;
-    z-index: 100;
   }
   nav ul .dropdown_menu:focus-within .dropdown {
     display: block;
