@@ -1,13 +1,27 @@
-// vite.config.js
-export default {
-    base: "/",
-    build: {
-      outDir: 'dist', // Specify the output directory for production builds
-      manifest: true, // Generate manifest.json for PWA support
-      rollupOptions: {
-        main: './index.html', // Specify your main HTML file
-        about: './pages/about.html', // Add about.html to input if not included automatically
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        index: '/index.html',
+        about: '/about.html',
+        blog: '/blog.html',
+        contact: '/contact.html',
+        price: '/price.html',
+        project: '/project.html',
+        services: '/services.html',
+        team: '/team.html',
+      },
+      output: {
+        entryFileNames: '[name].js',
+        assetFileNames: '[name].[ext]',
+        chunkFileNames: 'chunks/[name]-[hash].js',
       },
     },
-  };
-  
+    assetsInclude: [
+      './public/**/*.css',
+      './public/**/*.ttf', 
+    ],
+  },
+});

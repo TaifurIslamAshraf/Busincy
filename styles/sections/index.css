@@ -60,7 +60,7 @@ nav ul li .dropdown li {
 nav ul .dropdown_menu:hover .dropdown {
   display: block;
 }
-.fa-bars {
+#mobile_menu {
   display: none;
 }
 
@@ -954,7 +954,7 @@ nav ul .dropdown_menu:hover .dropdown {
 @media screen and (max-width: 1165px) {
   /* responsive home nav */
 
-  .fa-bars {
+  #mobile_menu {
     display: block;
     margin-right: 10px;
     cursor: pointer;
@@ -962,7 +962,7 @@ nav ul .dropdown_menu:hover .dropdown {
     border-radius: 4px;
     z-index: 100;
   }
-  .fa-bars.active-fa-bars {
+  #mobile_menu.active-fa-bars {
     background-color: rgba(207, 64, 64, 0.247);
   }
 

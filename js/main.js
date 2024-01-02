@@ -105,3 +105,46 @@ export const teamSwiperSlider = () => {
       teamSwiper.slidePrev();
     });
 };
+
+//detector sensor
+export const detector = (counterSection, workEl, workElData) => {
+  const workObserver = new IntersectionObserver(
+    (entries, observer) => {
+      const [entry] = entries;
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      const workCounter = document.querySelectorAll(workEl);
+      const duration = 2000; 
+
+      workCounter.forEach((curEl) => {
+        const targetNumber = parseInt(curEl.getAttribute(workElData));
+        const initialNumber = parseInt(curEl.textContent);
+
+        const increment = Math.ceil((targetNumber - initialNumber) / (duration / 16));
+
+        let currentNumber = initialNumber;
+
+        const updateNumber = () => {
+          if (currentNumber < targetNumber) {
+            currentNumber = Math.min(currentNumber + increment, targetNumber);
+            curEl.textContent = `${currentNumber}+`;
+            requestAnimationFrame(updateNumber);
+          }
+        };
+
+        requestAnimationFrame(updateNumber);
+      });
+      observer.unobserve(counterSection);
+    },
+    {
+      root: null,
+      threshold: 0,
+    }
+  );
+
+  return workObserver;
+};
+
+

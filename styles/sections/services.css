@@ -107,6 +107,7 @@
   max-width: 1170px;
   width: 100%;
   margin: 1rem auto;
+  font-family: var(--header-font);
 
   display: flex;
   align-items: center;
