@@ -100,6 +100,20 @@ nav ul .dropdown_menu:hover .dropdown {
 .index_hero-right a {
   color: #fff;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 150px;
+
+  transition: all 0.3s;
+}
+.index_hero_right-btn_icon {
+  width: 20px;
+}
+.index_hero-right a:hover {
+  background-color: var(--button-color);
+  transform: translateY(-5px);
 }
 
 .index_hero-right_play-img {
@@ -177,14 +191,17 @@ nav ul .dropdown_menu:hover .dropdown {
   background: var(--bg-secondary);
   height: 290px;
 }
+.partner_content_slide {
+  white-space: nowrap;
+}
 .partner_content_slide .slide-logo {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 1rem;
-  margin-top: 10rem;
 }
-
+.partner_content_slide .slide-logo img {
+  margin: 10rem 2rem 0 2rem;
+}
 /* service section styles */
 .service_content {
   background-color: var(--bg-primary);
@@ -225,11 +242,16 @@ nav ul .dropdown_menu:hover .dropdown {
   border: 2.5px solid;
   border-image: var(--border);
 }
-.service_card img {
+.service_card:hover .service_card-icon {
+  background-color: var(--bg-secondary);
+  color: #fff;
+}
+.service_card .service_card-icon {
   background-color: #1c42453d;
   padding: 5px;
   width: 40px;
   height: 40px;
+  transition: all 0.3s;
 }
 .service_card h2 {
   font-size: 22px;
@@ -246,13 +268,24 @@ nav ul .dropdown_menu:hover .dropdown {
   margin: 0.5rem 0;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 0;
+  max-width: 170px;
   gap: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .service_card-button h3 {
   font-size: 16px;
   font-weight: 700;
+}
+.service_card-button:hover {
+  background-color: var(--bg-secondary);
+  color: #fff;
+  transform: translateY(5px);
 }
 
 /* home about sections */
@@ -295,7 +328,7 @@ nav ul .dropdown_menu:hover .dropdown {
   font-weight: 700;
   font-size: 16px;
   width: 170px;
-  padding: 5px 5px;
+  padding: 10px 5px;
   color: #fff;
   background: var(--button-color);
   padding: 0.5rem 1.5rem;
@@ -340,11 +373,20 @@ nav ul .dropdown_menu:hover .dropdown {
 .home_projects-content_subtext .home_projects-link {
   display: flex;
   align-items: center;
+
+  max-width: 170px;
+  padding: 10px 5px;
   gap: 0.5rem;
   color: var(--button-color);
   font-size: 16px;
   font-weight: 700;
   margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.home_projects-content_subtext .home_projects-link:hover {
+  background-color: var(--bg-secondary);
+  color: #fff;
 }
 
 .home_projects-cards {
@@ -389,12 +431,12 @@ nav ul .dropdown_menu:hover .dropdown {
 
   background-color: var(--button-color);
   color: #fff;
-  padding: 5px 10px;
+  padding: 6px 10px;
   cursor: pointer;
   transition: all 0.3s;
 }
 .home_projects-card_content-btn:hover {
-  background-color: var(--text-secondary);
+  background-color: var(--bg-secondary);
   transform: scale(1.1);
 }
 .home_projects-card_content-btn button {
@@ -712,7 +754,7 @@ nav ul .dropdown_menu:hover .dropdown {
   transition: all 0.3s;
 }
 .price_table-card-btn:hover {
-  background-color: var(--text-primary-forgraund);
+  background-color: var(--bg-primary);
   color: var(--text-primary);
   transform: translateY(-5px);
 }
@@ -758,13 +800,11 @@ nav ul .dropdown_menu:hover .dropdown {
   color: #fff;
 }
 .start_project-btn:hover {
-  background-color: var(--text-primary-forgraund);
-  color: var(--text-primary);
+  background-color: var(--bg-secondary);
   transform: translateY(-5px);
 }
 .start_project-btn:hover button {
-  background-color: var(--text-primary-forgraund);
-  color: var(--text-primary);
+  background-color: var(--bg-secondary);
 }
 
 /* footer sections styles */
@@ -1010,8 +1050,8 @@ nav ul .dropdown_menu:hover .dropdown {
 
   /* parner logo */
 
-  .partner_content_slide .slide-logo {
-    margin-top: 12rem;
+  .partner_content_slide .slide-logo img {
+    margin: 11rem 2rem 0 2rem;
   }
 
   /* service  */

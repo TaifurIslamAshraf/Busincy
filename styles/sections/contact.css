@@ -108,7 +108,7 @@
 
   width: 200px;
   text-align: center;
-  padding: 7px 0;
+  padding: 10px 0;
   background-color: var(--button-color);
   color: #fff;
   font-size: 16px;
@@ -117,6 +117,7 @@
   transition: all 0.3s;
 }
 .contact_form form > button:hover {
+  background-color: var(--bg-secondary);
   transform: translateY(-5px);
 }
 .contact_map {

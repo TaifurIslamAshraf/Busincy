@@ -81,6 +81,7 @@
   width: 92%;
   height: 8px;
   background-color: var(--button-color);
+  animation: overlay1Anim 1s linear;
 }
 .services_details-bottom .skill_line-overlay2 {
   position: absolute;
@@ -88,6 +89,7 @@
 
   width: 85%;
   height: 8px;
+  animation: overlay2Anim 1s linear;
   background-color: var(--button-color);
 }
 .services_details-bottom .skill_line-overlay3 {
@@ -97,6 +99,7 @@
   width: 70%;
   height: 8px;
   background-color: var(--button-color);
+  animation: overlay3Anim 1s linear;
 }
 
 /* services counter */
@@ -149,5 +152,30 @@
   }
   .services_counter p {
     font-size: 12px;
+  }
+}
+
+@keyframes overlay1Anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 92%;
+  }
+}
+@keyframes overlay2Anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes overlay3Anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
   }
 }

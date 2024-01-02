@@ -74,7 +74,11 @@
             ad minim veniam, quis nostrud exercitation.
           </p>
           <a href="#">
-            Explore More <img src="./assets/button_arrow.png" alt="" />
+            Explore More
+            <i
+              class="index_hero_right-btn_icon"
+              data-lucide="arrow-up-right"
+            ></i>
           </a>
 
           <img
@@ -116,8 +120,23 @@
 
       <!-- partnar logo -->
       <div class="partner_content">
-        <marquee class="partner_content_slide">
+        <marquee class="partner_content_slide" width="100%" scrollamount="12">
           <div class="slide-logo">
+            <div class="">
+              <img src="./assets/google.svg" alt="google" />
+            </div>
+            <div class="">
+              <img src="./assets/airbnb.png" alt="" />
+            </div>
+            <div class="">
+              <img src="./assets/stripe.png" alt="" />
+            </div>
+            <div class="">
+              <img src="./assets/uber.png" alt="" />
+            </div>
+            <div class="">
+              <img src="./assets/amazon.png" alt="" />
+            </div>
             <div class="">
               <img src="./assets/google.svg" alt="google" />
             </div>
@@ -154,7 +173,7 @@
 
         <div class="service_content-cards">
           <div class="service_card" data-aos="fade-up">
-            <img src="./assets/Web development.svg" alt="web_development" />
+            <i class="service_card-icon" data-lucide="laptop"></i>
             <h2>Web Development</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -168,7 +187,7 @@
           </div>
 
           <div class="service_card" data-aos="fade-down">
-            <img src="./assets/ui-ux design.svg" alt="web_development" />
+            <i class="service_card-icon" data-lucide="app-window"></i>
             <h2>UI/UX Design</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -182,7 +201,7 @@
           </div>
 
           <div class="service_card" data-aos="fade-up">
-            <img src="./assets/digital marketing.svg" alt="ui ux" />
+            <i class="service_card-icon" data-lucide="megaphone"></i>
             <h2>Digital Marketing</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -196,7 +215,7 @@
           </div>
 
           <div class="service_card" data-aos="fade-down">
-            <img src="./assets/graphic design.svg" alt="web_development" />
+            <i class="service_card-icon" data-lucide="pen-tool"></i>
             <h2>Graphic Design</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -213,9 +232,10 @@
 
       <!-- home about section -->
       <div class="container home_about">
-        <p class="home_about-subtitle">About us</p>
         <div class="home_about-content">
           <div class="home_about-text" data-aos="fade-down">
+            <p class="home_about-subtitle">About us</p>
+
             <h1 class="title">
               We are here to make your <br />
               product look more elegant <br />
@@ -266,113 +286,124 @@
         </div>
 
         <div class="home_projects-cards">
-          <div class="home_projects-card" data-aos="zoom-in">
-            <img
-              class="home_projects_card-img"
-              src="./assets/projects_image1.png"
-              alt="home-projects-image"
-            />
-            <div class="home_projects-card_content">
-              <div class="home_projects-card_content-text">
-                <h3>Architect Drawing</h3>
-                <p>UI/UX Design | 15 Aug 2023</p>
-              </div>
-              <div class="home_projects-card_content-btn">
-                <button>See Project</button>
-                <i data-lucide="arrow-up-right"></i>
+          <a href="#">
+            <div class="home_projects-card" data-aos="zoom-in">
+              <img
+                class="home_projects_card-img"
+                src="./assets/projects_image1.png"
+                alt="home-projects-image"
+              />
+              <div class="home_projects-card_content">
+                <div class="home_projects-card_content-text">
+                  <h3>Architect Drawing</h3>
+                  <p>UI/UX Design | 15 Aug 2023</p>
+                </div>
+                <div class="home_projects-card_content-btn">
+                  <button>See Project</button>
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="home_projects-card" data-aos="zoom-in">
-            <img
-              class="home_projects_card-img"
-              src="./assets/projects_image2.png"
-              alt="home-projects-image"
-            />
-            <div class="home_projects-card_content">
-              <div class="home_projects-card_content-text">
-                <h3>Businessman Writing</h3>
-                <p>Seo Planing | 15 Aug 2022</p>
-              </div>
-              <div class="home_projects-card_content-btn">
-                <button>See Project</button>
-                <i data-lucide="arrow-up-right"></i>
+          <a href="#">
+            <div class="home_projects-card" data-aos="zoom-in">
+              <img
+                class="home_projects_card-img"
+                src="./assets/projects_image2.png"
+                alt="home-projects-image"
+              />
+              <div class="home_projects-card_content">
+                <div class="home_projects-card_content-text">
+                  <h3>Businessman Writing</h3>
+                  <p>Seo Planing | 15 Aug 2022</p>
+                </div>
+                <div class="home_projects-card_content-btn">
+                  <button>See Project</button>
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="home_projects-card" data-aos="zoom-in">
-            <img
-              class="home_projects_card-img"
-              src="./assets/projects_image3.png"
-              alt="home-projects-image"
-            />
-            <div class="home_projects-card_content">
-              <div class="home_projects-card_content-text">
-                <h3>Engineer Meeting</h3>
-                <p>Drawing Planing | 15 Aug 2022</p>
-              </div>
-              <div class="home_projects-card_content-btn">
-                <button>See Project</button>
-                <i data-lucide="arrow-up-right"></i>
+          <a href="#">
+            <div class="home_projects-card" data-aos="zoom-in">
+              <img
+                class="home_projects_card-img"
+                src="./assets/projects_image3.png"
+                alt="home-projects-image"
+              />
+              <div class="home_projects-card_content">
+                <div class="home_projects-card_content-text">
+                  <h3>Engineer Meeting</h3>
+                  <p>Drawing Planing | 15 Aug 2022</p>
+                </div>
+                <div class="home_projects-card_content-btn">
+                  <button>See Project</button>
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="home_projects-card" data-aos="zoom-in">
-            <img
-              class="home_projects_card-img"
-              src="./assets/projects_image4.png"
-              alt="home-projects-image"
-            />
-            <div class="home_projects-card_content">
-              <div class="home_projects-card_content-text">
-                <h3>Calculating Finances</h3>
-                <p>Finances | 15 Aug 2022</p>
-              </div>
-              <div class="home_projects-card_content-btn">
-                <button>See Project</button>
-                <i data-lucide="arrow-up-right"></i>
+          <a href="#">
+            <div class="home_projects-card" data-aos="zoom-in">
+              <img
+                class="home_projects_card-img"
+                src="./assets/projects_image4.png"
+                alt="home-projects-image"
+              />
+              <div class="home_projects-card_content">
+                <div class="home_projects-card_content-text">
+                  <h3>Calculating Finances</h3>
+                  <p>Finances | 15 Aug 2022</p>
+                </div>
+                <div class="home_projects-card_content-btn">
+                  <button>See Project</button>
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
+          <a href="#">
+            <div class="home_projects-card" data-aos="zoom-in">
+              <img
+                class="home_projects_card-img"
+                src="./assets/projects_image5.png"
+                alt="home-projects-image"
+              />
+              <div class="home_projects-card_content">
+                <div class="home_projects-card_content-text">
+                  <h3>Businessman Exam</h3>
+                  <p>Planing | 15 Aug 2022</p>
+                </div>
+                <div class="home_projects-card_content-btn">
+                  <button>See Project</button>
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
 
-          <div class="home_projects-card" data-aos="zoom-in">
-            <img
-              class="home_projects_card-img"
-              src="./assets/projects_image5.png"
-              alt="home-projects-image"
-            />
-            <div class="home_projects-card_content">
-              <div class="home_projects-card_content-text">
-                <h3>Businessman Exam</h3>
-                <p>Planing | 15 Aug 2022</p>
-              </div>
-              <div class="home_projects-card_content-btn">
-                <button>See Project</button>
-                <i data-lucide="arrow-up-right"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="home_projects-card" data-aos="zoom-in">
-            <img
-              class="home_projects_card-img"
-              src="./assets/projects_image6.png"
-              alt="home-projects-image"
-            />
-            <div class="home_projects-card_content">
-              <div class="home_projects-card_content-text">
-                <h3>Giving Presentation</h3>
-                <p>Planing | 15 Aug 2022</p>
-              </div>
-              <div class="home_projects-card_content-btn">
-                <button>See Project</button>
-                <i data-lucide="arrow-up-right"></i>
+          <a href="#">
+            <div class="home_projects-card" data-aos="zoom-in">
+              <img
+                class="home_projects_card-img"
+                src="./assets/projects_image6.png"
+                alt="home-projects-image"
+              />
+              <div class="home_projects-card_content">
+                <div class="home_projects-card_content-text">
+                  <h3>Giving Presentation</h3>
+                  <p>Planing | 15 Aug 2022</p>
+                </div>
+                <div class="home_projects-card_content-btn">
+                  <button>See Project</button>
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -738,12 +769,13 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="./js/index.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- licide icon -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
