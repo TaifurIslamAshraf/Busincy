@@ -130,6 +130,7 @@
 }
 
 /* services section responsive */
+
 @media screen and (max-width: 992px) {
   .services_details-content > h1 {
     font-size: 30px;

@@ -120,6 +120,9 @@
   .about_team {
     margin-bottom: 0rem;
   }
+  .about_us_bottom_content_img-overlay {
+    display: none;
+  }
 }
 @media screen and (max-width: 775px) {
   .about_home {
@@ -135,8 +138,5 @@
   }
   .about_us_middel-content > h1 {
     font-size: 30px;
-  }
-  .about_us_bottom_content_img-overlay {
-    display: none;
   }
 }
