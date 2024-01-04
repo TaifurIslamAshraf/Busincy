@@ -26,7 +26,7 @@
     <div id="app">
       <!-- navbar -->
       <nav class="flex-between">
-        <div class="flex-between">
+        <div class="top-menu">
           <div class="nav_icon">
             <a href="/">
               <img src="./assets/logo.png" alt="logo" />
@@ -81,11 +81,14 @@
             ></i>
           </a>
 
-          <img
-            class="index_hero-right_play-img"
-            src="./assets/play button.png"
-            alt=""
-          />
+          <div class="hero_play-btn">
+            <div class="hero_play_btn-logo">
+              <i data-lucide="play"></i>
+            </div>
+            <div class="hero_play_btn-text">
+              <p>Video play video play</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -173,7 +176,9 @@
 
         <div class="service_content-cards">
           <div class="service_card" data-aos="fade-up">
-            <i class="service_card-icon" data-lucide="laptop"></i>
+            <div class="service_card-icons">
+              <i class="service_card-icon" data-lucide="laptop"></i>
+            </div>
             <h2>Web Development</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -182,12 +187,14 @@
             </p>
             <div class="service_card-button">
               <h3>Explore More</h3>
-              <i data-lucide="arrow-up-right"></i>
+              <i class="arrow-up-right-icon" data-lucide="arrow-up-right"></i>
             </div>
           </div>
 
           <div class="service_card" data-aos="fade-down">
-            <i class="service_card-icon" data-lucide="app-window"></i>
+            <div class="service_card-icons">
+              <i class="service_card-icon" data-lucide="app-window"></i>
+            </div>
             <h2>UI/UX Design</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -196,12 +203,14 @@
             </p>
             <div class="service_card-button">
               <h3>Explore More</h3>
-              <i data-lucide="arrow-up-right"></i>
+              <i class="arrow-up-right-icon" data-lucide="arrow-up-right"></i>
             </div>
           </div>
 
           <div class="service_card" data-aos="fade-up">
-            <i class="service_card-icon" data-lucide="megaphone"></i>
+            <div class="service_card-icons">
+              <i class="service_card-icon" data-lucide="megaphone"></i>
+            </div>
             <h2>Digital Marketing</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -210,12 +219,14 @@
             </p>
             <div class="service_card-button">
               <h3>Explore More</h3>
-              <i data-lucide="arrow-up-right"></i>
+              <i class="arrow-up-right-icon" data-lucide="arrow-up-right"></i>
             </div>
           </div>
 
           <div class="service_card" data-aos="fade-down">
-            <i class="service_card-icon" data-lucide="pen-tool"></i>
+            <div class="service_card-icons">
+              <i class="service_card-icon" data-lucide="pen-tool"></i>
+            </div>
             <h2>Graphic Design</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -224,7 +235,7 @@
             </p>
             <div class="service_card-button">
               <h3>Explore More</h3>
-              <i data-lucide="arrow-up-right"></i>
+              <i class="arrow-up-right-icon" data-lucide="arrow-up-right"></i>
             </div>
           </div>
         </div>
@@ -300,7 +311,10 @@
                 </div>
                 <div class="home_projects-card_content-btn">
                   <button>See Project</button>
-                  <i data-lucide="arrow-up-right"></i>
+                  <i
+                    class="home_projects-card_content-btn-icon"
+                    data-lucide="arrow-up-right"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -320,7 +334,10 @@
                 </div>
                 <div class="home_projects-card_content-btn">
                   <button>See Project</button>
-                  <i data-lucide="arrow-up-right"></i>
+                  <i
+                    class="home_projects-card_content-btn-icon"
+                    data-lucide="arrow-up-right"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -340,7 +357,10 @@
                 </div>
                 <div class="home_projects-card_content-btn">
                   <button>See Project</button>
-                  <i data-lucide="arrow-up-right"></i>
+                  <i
+                    class="home_projects-card_content-btn-icon"
+                    data-lucide="arrow-up-right"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -360,7 +380,10 @@
                 </div>
                 <div class="home_projects-card_content-btn">
                   <button>See Project</button>
-                  <i data-lucide="arrow-up-right"></i>
+                  <i
+                    class="home_projects-card_content-btn-icon"
+                    data-lucide="arrow-up-right"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -379,7 +402,10 @@
                 </div>
                 <div class="home_projects-card_content-btn">
                   <button>See Project</button>
-                  <i data-lucide="arrow-up-right"></i>
+                  <i
+                    class="home_projects-card_content-btn-icon"
+                    data-lucide="arrow-up-right"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -399,7 +425,10 @@
                 </div>
                 <div class="home_projects-card_content-btn">
                   <button>See Project</button>
-                  <i data-lucide="arrow-up-right"></i>
+                  <i
+                    class="home_projects-card_content-btn-icon"
+                    data-lucide="arrow-up-right"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -685,7 +714,7 @@
       <!-- footer sections -->
       <footer class="container footer">
         <!-- start projects sections -->
-        <div class="start_project" data-aos="fade-up">
+        <div class="start_project">
           <h1 class="title">
             Have a project in mind? Let’s get <br />
             to work.
@@ -765,7 +794,7 @@
         </div>
 
         <div class="footer_copyright">
-          <small> Copyright &copy; 2023. All Rights Reserved By </small>
+          <small> Copyright &copy; 2024. All Rights Reserved</small>
         </div>
       </footer>
     </div>

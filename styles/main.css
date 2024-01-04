@@ -105,9 +105,12 @@ button {
   font-weight: 600;
   letter-spacing: 3.5px;
 }
+.arrow-up-right-icon {
+  width: 20px;
+}
 
 .active-path {
-  color: #ed854a;
+  color: #ed854a !important;
 }
 
 @media screen and (max-width: 1165px) {
@@ -120,9 +123,6 @@ button {
   }
   #app {
     overflow-x: hidden !important;
-  }
-  .active-path {
-    color: #fff;
   }
 }
 
