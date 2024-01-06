@@ -222,6 +222,9 @@ nav ul .dropdown_menu:hover .dropdown {
 
   padding: 4rem 1rem;
 }
+.home_meta-experience p {
+  font-weight: 600;
+}
 
 /* partner logo slide */
 .partner_content {
