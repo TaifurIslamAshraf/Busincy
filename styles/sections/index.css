@@ -160,6 +160,9 @@ nav ul .dropdown_menu:hover .dropdown {
   top: 0.7rem;
   transform-origin: 0px 55px;
 }
+.hero_play_icon {
+  color: #fff;
+}
 
 /* home meta */
 .home_meta {
